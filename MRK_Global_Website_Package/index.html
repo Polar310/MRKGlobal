@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MRK Global — international timber trading, connecting South African eucalyptus grandis, pine and core veneer with major Indian ports.">
+<title>MRK Global | International Timber Trading</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#18231e;--muted:#68746d;--green:#244b3b;--green2:#426b56;--sage:#e9eee8;--cream:#f7f8f5;--line:#e2e7e1;--white:#fff;--gold:#b58b55;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--white);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.eyebrow{font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--green2);font-weight:700}.section{padding:112px 0}.section-head:after{content:"";display:block;width:42px;height:2px;background:var(--gold);margin-top:25px}.section-head{max-width:650px;margin-bottom:42px}.section-head h2{font:700 clamp(32px,4vw,48px)/1.12 Manrope,sans-serif;letter-spacing:-.045em;margin:13px 0 16px}.section-head p{color:var(--muted);font-size:16px;margin:0}.btn{display:inline-flex;align-items:center;gap:12px;background:var(--green);color:white;padding:15px 21px;border-radius:3px;font-size:13px;font-weight:700;letter-spacing:.02em;transition:.2s}.btn:hover{background:#183629;transform:translateY(-2px)}.btn.secondary{background:transparent;color:var(--green);border:1px solid rgba(36,75,59,.35)}.btn.secondary:hover{background:var(--sage)}.arrow{font-size:17px;line-height:1}
+header{height:82px;display:flex;align-items:center;position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);z-index:20;border-bottom:1px solid rgba(226,231,225,.8)}.nav{display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:38px;height:38px;border:1.5px solid var(--green);display:grid;place-items:center;color:var(--green);font:800 14px Manrope;letter-spacing:-.08em}.brand-name{font:800 17px Manrope;letter-spacing:.13em}.brand-sub{display:block;font-size:8px;letter-spacing:.24em;color:var(--muted);margin-top:1px}.navlinks{display:flex;align-items:center;gap:32px;font-size:12px;font-weight:600;color:#46544c}.navlinks a:hover{color:var(--green2)}.navlinks .nav-cta{padding:11px 16px;border:1px solid var(--line);color:var(--green)}.menu{display:none;background:none;border:0;font-size:24px;color:var(--green)}
+.hero{min-height:690px;background:linear-gradient(90deg,rgba(14,31,24,.88) 0%,rgba(14,31,24,.68) 47%,rgba(14,31,24,.12) 100%),url('https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=2200&q=85') center/cover;display:flex;align-items:center;color:#fff;position:relative}.hero:after{content:"";position:absolute;inset:auto 0 0;height:120px;background:linear-gradient(transparent,rgba(10,24,18,.22))}.hero-content{position:relative;z-index:1;max-width:690px;padding:90px 0 110px}.hero .eyebrow{color:#d5c2a4}.hero h1{font:700 clamp(46px,6.4vw,78px)/1.03 Manrope,sans-serif;letter-spacing:-.06em;margin:23px 0}.hero p{max-width:530px;color:rgba(255,255,255,.82);font-size:17px;line-height:1.8;margin:0 0 32px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}.hero .btn{background:#fff;color:var(--green)}.hero .btn.secondary{color:#fff;border-color:rgba(255,255,255,.5);background:transparent}.hero .btn.secondary:hover{background:rgba(255,255,255,.12)}
+.trustbar{background:var(--green);color:white;padding:24px 0}.trust-inner{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}.trust-label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#c7d6cc}.trust-main{font:600 14px Manrope}.trust-sep{height:34px;width:1px;background:rgba(255,255,255,.22)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.intro-visual{min-height:470px;position:relative;background:var(--sage);overflow:hidden}.intro-visual img{width:100%;height:470px;object-fit:cover;display:block}.visual-note{position:absolute;bottom:22px;left:22px;background:white;padding:18px 21px;max-width:230px;box-shadow:0 10px 35px #17291c20}.visual-note strong{display:block;font:700 13px Manrope;color:var(--green)}.visual-note span{font-size:11px;color:var(--muted)}.intro-copy h2{font:700 clamp(32px,4vw,47px)/1.13 Manrope;letter-spacing:-.045em;margin:14px 0 22px}.intro-copy p{color:var(--muted);font-size:15px;margin:0 0 18px}.intro-copy .btn{margin-top:12px}
+.products{background:var(--cream)}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product-card{background:white;border:1px solid var(--line);transition:transform .28s ease,box-shadow .28s ease;overflow:hidden;border-radius:4px}.product-card:hover{transform:translateY(-5px);box-shadow:0 18px 45px #1b322414}.product-image{height:255px;overflow:hidden;background:#e8ece7}.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.product-card:hover img{transform:scale(1.045)}.product-body{padding:25px 25px 28px}.product-no{font-size:10px;letter-spacing:.17em;color:var(--gold);font-weight:700}.product-body h3{font:700 22px Manrope;letter-spacing:-.03em;margin:9px 0}.product-body p{font-size:13px;color:var(--muted);margin:0 0 18px}.product-link{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:var(--green)}
+.feature-band{background:#f1f4f0;padding:76px 0}.feature-grid{display:grid;grid-template-columns:1.1fr 2fr;gap:65px;align-items:center}.feature-grid h2{font:700 37px/1.14 Manrope;letter-spacing:-.045em;margin:12px 0}.feature-grid>div:first-child p{color:var(--muted);font-size:14px}.features{display:grid;grid-template-columns:1fr 1fr;gap:28px 34px}.feature{border-top:1px solid #d5ddd5;padding-top:17px}.feature strong{font:700 14px Manrope;display:block;margin-bottom:7px}.feature span{font-size:12px;color:var(--muted);line-height:1.7;display:block}
+.sourcing-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.sourcing-photo{height:460px;overflow:hidden}.sourcing-photo img{width:100%;height:100%;object-fit:cover}.sourcing-copy h2{font:700 43px/1.12 Manrope;letter-spacing:-.05em;margin:14px 0 20px}.sourcing-copy p{font-size:14px;color:var(--muted)}.origin-card{margin-top:28px;padding:20px 22px;background:var(--cream);border-left:3px solid var(--gold)}.origin-card strong{display:block;font:700 13px Manrope}.origin-card span{font-size:12px;color:var(--muted)}
+
+.shipping-visual{height:410px;position:relative;overflow:hidden;background:#e7ece7;border-radius:3px}
+.shipping-visual>img{width:100%;height:100%;object-fit:cover;display:block}
+.shipping-overlay{position:absolute;inset:auto 0 0;padding:25px 30px;background:linear-gradient(90deg,rgba(14,31,24,.9),rgba(14,31,24,.55));color:#fff;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.shipping-overlay span{font-size:9px;letter-spacing:.16em;color:#d7c6a9;font-weight:700}
+.shipping-overlay strong{font:700 15px Manrope}
+.shipping-arrow{font-size:25px!important;color:#fff!important;margin:0 8px}
+.port-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.port{background:#fff;border:1px solid var(--line);padding:19px 20px;border-radius:3px;transition:.2s}.port:hover{border-color:#b7c8bb;transform:translateY(-2px)}
+.port span{display:block;font-size:9px;letter-spacing:.14em;color:var(--green2);font-weight:700;margin-bottom:6px}
+.port strong{font:700 14px Manrope}
+.port-note{font-size:11px;color:var(--muted);margin:17px 0 0}
+.parent{background:var(--green);color:#fff;padding:76px 0}.parent-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.parent h2{font:700 38px/1.13 Manrope;letter-spacing:-.04em;margin:12px 0 17px}.parent p{color:#d2ddd5;font-size:14px}.parent .eyebrow{color:#c7b08b}.parent-facts{display:grid;grid-template-columns:1fr 1fr;gap:13px}.parent-fact{padding:22px;border:1px solid rgba(255,255,255,.2)}.parent-fact strong{display:block;font:700 14px Manrope;margin-bottom:7px}.parent-fact span{font-size:11px;color:#cbd7ce}
+.leadership{background:var(--cream)}.people{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.person{background:white;border:1px solid var(--line);padding:26px 22px;min-height:145px;border-radius:3px;transition:.2s}.person:hover{border-color:#b7c8bb;transform:translateY(-3px)}.person h3{font:700 16px Manrope;margin:0 0 7px}.person p{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0}
+.contact{padding:90px 0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.contact h2{font:700 43px/1.12 Manrope;letter-spacing:-.05em;margin:14px 0 18px}.contact p{color:var(--muted);font-size:14px}.contact-panel{background:var(--cream);padding:34px;border:1px solid var(--line);border-radius:3px}.contact-panel h3{font:700 17px Manrope;margin:0 0 15px}.contact-panel p{margin:0 0 22px}.contact-panel .btn{margin-top:4px}.contact-details{display:flex;gap:28px;flex-wrap:wrap;margin-top:26px}.contact-details div{font-size:12px;color:var(--muted)}.contact-details strong{display:block;color:var(--ink);font:700 11px Manrope;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px}
+footer{background:#14251d;color:#fff;padding:35px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-copy{font-size:11px;color:#aebdb3}.footer-brand{font:800 15px Manrope;letter-spacing:.15em}.footer-note{font-size:10px;color:#aebdb3;text-align:right}
+@media(max-width:850px){.navlinks{gap:17px}.intro-grid,.sourcing-grid,.parent-grid,.contact-grid{gap:38px}.feature-grid{grid-template-columns:1fr;gap:30px}.people{grid-template-columns:repeat(2,1fr)}.port-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{width:min(var(--max),calc(100% - 34px))}.section{padding:72px 0}header{height:70px}.menu{display:block}.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:white;padding:20px 24px 25px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:17px}.navlinks.open{display:flex}.navlinks .nav-cta{text-align:center}.hero{min-height:620px;background-position:58% center}.hero-content{padding:75px 0}.hero p{font-size:15px}.trust-inner{gap:12px}.trust-sep{display:none}.trust-main{width:100%}.intro-grid,.sourcing-grid,.parent-grid,.contact-grid{grid-template-columns:1fr}.intro-visual,.intro-visual img{height:340px;min-height:340px}.product-grid{grid-template-columns:1fr}.shipping-visual{height:300px}.shipping-overlay{padding:18px;gap:10px}.shipping-overlay strong{font-size:12px}.port-grid{grid-template-columns:1fr 1fr}.product-image{height:220px}.features{grid-template-columns:1fr 1fr;gap:22px 18px}.sourcing-photo{height:320px}.parent h2,.contact h2{font-size:34px}.people{grid-template-columns:1fr 1fr}.person{padding:19px 15px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-note{text-align:left}.contact-panel{padding:23px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home" aria-label="MRK Global home"><span class="brand-mark">MRK</span><span><span class="brand-name">MRK GLOBAL</span><span class="brand-sub">TIMBER TRADING</span></span></a>
+  <button class="menu" aria-label="Open navigation" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
+  <nav class="navlinks">
+   <a href="#about">About</a><a href="#products">Products</a><a href="#sourcing">Sourcing</a><a href="#shipping">Shipping</a><a href="#group">Our Group</a><a href="#leadership">Leadership</a><a class="nav-cta" href="#contact">Enquire <span class="arrow">↗</span></a>
+  </nav>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap"><div class="hero-content">
+  <div class="eyebrow">Global timber trading · Rooted in experience</div>
+  <h1>Connecting timber<br>to global markets.</h1>
+  <p>MRK Global brings together trusted sourcing relationships, market knowledge and dependable trade execution to connect quality timber products with customers around the world.</p>
+  <div class="hero-actions"><a class="btn" href="#products">Explore our products <span class="arrow">↗</span></a><a class="btn secondary" href="#about">Discover MRK</a></div>
+ </div></div>
+</section>
+<section class="trustbar"><div class="wrap trust-inner">
+ <div><div class="trust-label">A wholly owned subsidiary of</div><div class="trust-main">Rishi Shipping</div></div><div class="trust-sep"></div>
+ <div><div class="trust-label">Group roots</div><div class="trust-main">Mundra · Kandla, India</div></div><div class="trust-sep"></div>
+ <div><div class="trust-label">Our focus</div><div class="trust-main">International timber trade</div></div>
+</div></section>
+<section class="section" id="about"><div class="wrap intro-grid">
+ <div class="intro-visual"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=85" alt="Cargo vessel moving across open water"><div class="visual-note"><strong>Trade with confidence</strong><span>Relationships, reliability and reach.</span></div></div>
+ <div class="intro-copy"><div class="eyebrow">About MRK Global</div><h2>A focused timber trading partner, built on strong foundations.</h2>
+ <p>MRK Global is an international timber trading company and a wholly owned subsidiary of Rishi Shipping, the established shipping and cargo-handling group based in the Mundra–Kandla region of Gujarat, India.</p>
+ <p>With a clear focus on timber, we work across sourcing, procurement and international supply. Our approach is grounded in long-term supplier relationships, product understanding and a practical appreciation of the logistics that move commodities across markets.</p>
+ <a class="btn secondary" href="#group">The strength of our group <span class="arrow">↗</span></a>
+ </div>
+</div></section>
+<section class="section products" id="products"><div class="wrap">
+ <div class="section-head"><div class="eyebrow">What we trade</div><h2>Timber products for global demand.</h2><p>Our current trading portfolio is centred on South African timber and wood products, with sourcing and supply tailored to customer requirements.</p></div>
+ <div class="product-grid">
+  <article class="product-card"><div class="product-image"><img src="https://images.pexels.com/photos/34112914/pexels-photo-34112914.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Stacked roundwood logs, representing Eucalyptus grandis timber supply"></div><div class="product-body"><span class="product-no">01 / TIMBER</span><h3>Eucalyptus Grandis Logs</h3><p>South African Eucalyptus grandis logs for customers seeking dependable supply and consistent commercial specifications.</p><a class="product-link" href="#contact">Enquire about eucalyptus ↗</a></div></article>
+  <article class="product-card"><div class="product-image"><img src="https://images.pexels.com/photos/4153340/pexels-photo-4153340.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Close-up of stacked pine logs"></div><div class="product-body"><span class="product-no">02 / TIMBER</span><h3>Pine Logs</h3><p>South African pine logs from South Africa, supporting a growing portfolio and evolving customer requirements.</p><a class="product-link" href="#contact">Enquire about pine ↗</a></div></article>
+  <article class="product-card"><div class="product-image"><img src="https://web.tradekorea.com/upload_file2/product/966/P00288966/cbe9caa5_43be07a3_d03b_4ff7_a4e9_9605f37645da.jpg" alt="Neatly stacked core veneer sheets"></div><div class="product-body"><span class="product-no">03 / WOOD PRODUCTS</span><h3>Core Veneer</h3><p>South African core veneer supplied for customers requiring a reliable source of wood-based raw material.</p><a class="product-link" href="#contact">Enquire about core veneer ↗</a></div></article>
+ </div>
+</div></section>
+<section class="feature-band"><div class="wrap feature-grid">
+ <div><div class="eyebrow">How we work</div><h2>Trade built around trust and execution.</h2><p>We keep the business focused: understand the requirement, work with the right sourcing partners and coordinate supply with care.</p></div>
+ <div class="features">
+  <div class="feature"><strong>Supplier relationships</strong><span>Building dependable partnerships with established sourcing networks.</span></div>
+  <div class="feature"><strong>Product understanding</strong><span>Working with customers on specifications, quality expectations and supply requirements.</span></div>
+  <div class="feature"><strong>Logistics perspective</strong><span>Supported by the wider group's experience in shipping, port operations and cargo movement.</span></div>
+  <div class="feature"><strong>Long-term approach</strong><span>Prioritising transparent communication and consistent commercial relationships.</span></div>
+ </div>
+</div></section>
+<section class="section" id="sourcing"><div class="wrap sourcing-grid">
+ <div class="sourcing-photo"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85" alt="Sunlight through a managed forest"></div>
+ <div class="sourcing-copy"><div class="eyebrow">Sourcing & supply</div><h2>Strong sourcing.<br>Clear trade pathways.</h2>
+ <p>South Africa is the principal origin for our current eucalyptus, pine and core veneer portfolio. We work to align product requirements, supplier coordination and shipment planning so that customers have clarity throughout the trading process.</p>
+ <p>Our sourcing approach is relationship-led and focused on the practical details that matter in international timber trade: specifications, availability, coordination and delivery.</p>
+ <div class="origin-card"><strong>Current principal sourcing market</strong><span>South Africa · Eucalyptus logs · Pine logs · Core veneer</span></div>
+ </div>
+</div></section>
+<section class="section" id="shipping">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Shipping & distribution</div><h2>From Durban to India's major ports.</h2>
+   <p>Our South African timber supply is shipped from Durban, connecting customers with key commercial ports across India.</p>
+  </div>
+  <div class="shipping-visual">
+   <img src="https://cisp.cachefly.net/assets/articles/images/resized/0001131309_resized_dctoperations2.jpg" alt="Container vessel and container terminal operations at Durban">
+   <div class="shipping-overlay"><span>EXPORT ORIGIN</span><strong>Durban, South Africa</strong><span class="shipping-arrow">→</span><span>INDIA DESTINATIONS</span><strong>Major ports across India</strong></div>
+  </div>
+  <div class="port-grid">
+   <div class="port"><span>WEST COAST</span><strong>Mundra</strong></div>
+   <div class="port"><span>WEST COAST</span><strong>Nhava Sheva</strong></div>
+   <div class="port"><span>WEST COAST</span><strong>Mangalore</strong></div>
+   <div class="port"><span>SOUTH COAST</span><strong>Cochin</strong></div>
+   <div class="port"><span>SOUTH COAST</span><strong>Tuticorin</strong></div>
+   <div class="port"><span>EAST COAST</span><strong>Chennai / Ennore</strong></div>
+   <div class="port"><span>EAST COAST</span><strong>Visakhapatnam</strong></div>
+   <div class="port"><span>EAST COAST</span><strong>Kolkata</strong></div>
+  </div>
+  <p class="port-note">Port coverage shown as our trading and shipment network; specific routings and service availability are subject to vessel schedules and booking confirmation.</p>
+ </div>
+</section>
+<section class="parent" id="group"><div class="wrap parent-grid">
+ <div><div class="eyebrow">Part of Rishi Shipping</div><h2>Backed by a group with deep roots in cargo and port operations.</h2><p>MRK Global is a wholly owned subsidiary of Rishi Shipping. The wider group is rooted in the Mundra–Kandla port region and brings experience across shipping, stevedoring, bulk and break-bulk cargo handling, warehousing and transport.</p><p>This connection gives MRK a valuable operational perspective on the movement of international commodities, complementing our dedicated focus on timber trading.</p></div>
+ <div class="parent-facts">
+  <div class="parent-fact"><strong>Mundra & Kandla</strong><span>Established operating base in Gujarat, India.</span></div>
+  <div class="parent-fact"><strong>Port operations</strong><span>Experience in cargo handling and stevedoring.</span></div>
+  <div class="parent-fact"><strong>Transport & fleet</strong><span>Group capabilities across equipment and cargo transport.</span></div>
+  <div class="parent-fact"><strong>Global connections</strong><span>International sourcing and trading relationships.</span></div>
+ </div>
+</div></section>
+<section class="section leadership" id="leadership"><div class="wrap">
+ <div class="section-head"><div class="eyebrow">Leadership</div><h2>Experience behind the business.</h2><p>Guided by experience across timber trading, operations and finance.</p></div>
+ <div class="people">
+  <article class="person"><h3>Suresh Moorjani</h3><p>Chairman</p></article>
+  <article class="person"><h3>Rishi Mansukhani</h3><p>Chief Executive Officer</p></article>
+  <article class="person"><h3>Krish Moorjani</h3><p>Chief Operating Officer</p></article>
+  <article class="person"><h3>Mahesh Moorjani</h3><p>Chief Financial Officer & Director</p></article>
+ </div>
+</div></section>
+<section class="contact" id="contact"><div class="wrap contact-grid">
+ <div><div class="eyebrow">Get in touch</div><h2>Let’s discuss your timber requirements.</h2><p>For product enquiries, sourcing discussions or supply requirements, connect with the MRK Global team.</p></div>
+ <div class="contact-panel"><h3>Start a conversation</h3><p>Tell us what you are looking for and our team can follow up with the relevant information.</p><div class="contact-details"><div><strong>Group base</strong>Mundra – Kandla<br>Gujarat, India</div><div><strong>Contact details</strong>To be added before launch</div></div></div>
+</div></section>
+</main>
+<footer><div class="wrap footer-inner"><div><div class="footer-brand">MRK GLOBAL</div><div class="footer-copy">International timber trading</div></div><div class="footer-note">A wholly owned subsidiary of Rishi Shipping<br>© <span id="year"></span> MRK Global. All rights reserved.</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));</script>
+</body>
+</html>
